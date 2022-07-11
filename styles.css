@@ -11,3 +11,25 @@
   --primary-text-color: #bec4e9;
   --heading-text-color: #061312;
 }
+.banner-section {
+  /* background-image: url(images/Qurbani-2022-website-banner-1600x800px.jpg); */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3),
+    url(images/Qurbani-2022-website-banner-1600x800px.jpg)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
