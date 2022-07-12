@@ -6,18 +6,65 @@
 :root {
   --primary-color: #0d2620;
   --secondery-color: #9cdeca;
-  --tersiary-color: #a73db8;
+  --tertiary-color: #a73db8;
   --border-color: #297a6d;
   --primary-text-color: #bec4e9;
-  --heading-text-color: #061312;
+  --secondery-text-color: #231955;
+  --heading-text-color: #47dfd3;
+  --primary-background-color: #ffdede;
 }
+body {
+  background-color: var(--primary-color);
+}
+
+/* header section start */
+
+header {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+.logo {
+  width: 20%;
+  padding: 0;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.logo img {
+  width: 50px;
+  height: 40px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-link a {
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 15px;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  border-radius: 5px;
+}
+.nav-link a:hover {
+  background-color: var(--primary-text-color);
+  color: var(--primary-color);
+}
+/* header section end */
+
+/* banner section start */
 .banner-section {
-  /* background-image: url(images/Qurbani-2022-website-banner-1600x800px.jpg); */
-  background: linear-gradient(
+  background-image: url(images/Qurbani-2022-website-banner-1600x800px.jpg);
+  /* background-image: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.3),
     url(images/Qurbani-2022-website-banner-1600x800px.jpg)
-  );
+  ); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -26,10 +73,178 @@
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 h1 {
   font-size: 45px;
   font-weight: bold;
+  color: var(--heading-text-color);
+}
+button {
+  background-color: var(--tertiary-color);
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: none;
+  color: Var(--primary-text-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.4s all ease-in-out;
+}
+button:hover {
+  background-color: var(--primary-text-color);
+  color: var(--primary-color);
+}
+p {
   color: var(--primary-text-color);
+  font-size: 20px;
+}
+.banner-content {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  border-radius: 20px;
+  padding: 15px 10px;
+  margin-top: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+/* banner section end */
+
+/* description section start */
+
+.content-description summary {
+  color: var(--primary-text-color);
+  font-size: 20px;
+  border: 2px solid var(--primary-text-color);
+  margin-top: 5px;
+  width: 120px;
+  padding: 10px;
+  background-color: var(--primary-background-color);
+  font-weight: bold;
+}
+.description {
+  display: flex;
+}
+.content-description {
+  width: 45%;
+  margin: 2%;
+  padding: 15px;
+}
+.content-img {
+  width: 45%;
+  margin: 2%;
+  padding: 15px;
+}
+.content-img img {
+  width: 100%;
+}
+/* description section end */
+
+/* donation section start */
+.donation-heading {
+  text-align: center;
+  margin: 10px 10px;
+  padding: 10px auto;
+  margin-bottom: 40px;
+}
+
+.donation-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  height: 45vh;
+}
+.donation-logo img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
+.donation-details {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.flexible-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  width: 45%;
+  margin: 10px;
+  background-color: var(--primary-background-color);
+  height: 45vh;
+  border-radius: 10px;
+}
+.donation-description {
+  text-align: center;
+  margin: 10px auto;
+}
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.donation-description p {
+  color: var(--secondery-text-color);
+}
+.donation-description ul li {
+  text-align: left;
+  margin-left: 15px;
+  padding: 5px 0;
+  color: var(--secondery-text-color);
+  font-size: 20px;
+}
+.donation-event {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.donation-event img {
+  width: 30%;
+  height: 45vh;
+  border-radius: 10px;
+  margin: 25px 0;
+}
+/* donation event end */
+.zakat-fund p {
+  margin-bottom: 25px;
+}
+.zakat-fund-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.zakat-fund-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  margin-right: 15px;
+  height: 100vh;
+}
+.zakat-fund-card .card-img {
+  width: 100%;
+  border-radius: 10px;
+  height: 46vh;
+}
+.card-img img {
+  width: 100%;
+  height: 50vh;
+}
+.zakat-fund-card h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--heading-text-color);
+  padding-top: 25px;
+}
+.card-content {
+  padding: 10px;
 }
