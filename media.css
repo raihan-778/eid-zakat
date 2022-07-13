@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--heading-text-color);
+  }
+  .banner-section {
+    background-image: url(images/Qurbani-2022-website-banner-1600x800px.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logo {
+    width: 20%;
+    padding: 0;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .logo img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .nav-link {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: column;
+  }
+  .description {
+    display: flex;
+    flex-flow: column;
+  }
+  .content-description {
+    width: 90%;
+    margin: 2% auto;
+    padding: 15px;
+  }
+  .content-img {
+    width: 98%;
+    margin: 2% auto;
+    padding: 15px;
+  }
+  .flexible-content {
+    flex-flow: column;
+    width: 95%;
+  }
+}
